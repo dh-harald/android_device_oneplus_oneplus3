@@ -79,6 +79,7 @@ endif
 EOF
 
 printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8996/graphics/graphics-vendor.mk)" >> "$PRODUCTMK"
+printf '%s\n' "\$(call inherit-product, vendor/qcom/binaries/bluetooth/bluetooth-vendor.mk)" >> "$PRODUCTMK"
 
 # Append the calls to firmware images
 append_firmware_calls_to_makefiles
